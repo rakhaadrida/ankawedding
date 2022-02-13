@@ -1,7 +1,7 @@
 body {
     background-color: #ffffff;
     font-family: 'Muli', sans-serif;
-    color: #041E44;
+    /*color: #041E44;*/
 }
 
 .section-header {
@@ -137,4 +137,341 @@ header p {
     margin-top: 25px;
     font-size: 22px;
     font-family: Roboto;
+}
+
+.section-prayer-greetings {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-style: italic;
+    color: black;
+}
+
+.section-prayer-prayings {
+    margin-top: -15px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-style: italic;
+    color: black;
+}
+
+.section-couple-info {
+    margin-top: 50px;
+}
+
+.section-couple-info-title h3 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: bolder;
+    color: black;
+}
+
+.section-couple-info-detail {
+    margin-top: 50px;
+}
+
+.couple-both-detail {
+    font-family: Roboto;
+    margin-top: 22px;
+    color: black;
+}
+
+.couple-both-detail h3 {
+    font-size: 30px;
+}
+
+.couple-both-detail h6 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+
+.couple-both-detail p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.couple-both-detail .btn-instagram-couple {
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.section-couple-info-detail-icon {
+    margin-top: 55px;
+}
+
+.section-engagement-video {
+    margin-top: 77px;
+}
+
+.section-wedding-prayer {
+    margin-top: 77px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-wedding-prayer h3 {
+    font-size: 40px;
+}
+
+.section-wedding-prayer .section-wedding-prayer-prayings {
+    margin-top: 23px;
+}
+
+.section-wedding-prayer .section-wedding-prayer-prayings p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.section-wedding-prayer .section-wedding-prayer-prayings h6 {
+    margin-top: -12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-countdown {
+    margin-top: 72px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-countdown h3 {
+    font-size: 58px;
+}
+
+.section-countdown p {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.section-countdown button {
+    margin-top: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.section-middle-image {
+    margin-top: 84px;
+    background: url("../images/middle-image.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+    color: black;
+}
+
+.section-wedding-info {
+    margin-top: 90px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-wedding-info-detail-both h2 {
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+.section-wedding-info-detail-both h6 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 33px;
+}
+
+.section-wedding-info-detail-both p {
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+.section-wedding-info-detail-icon {
+    margin-top: 70px;
+}
+
+.section-wedding-info-address {
+    margin-top: 25px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-wedding-info-address h4 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.section-wedding-info-button {
+    margin-top: 35px;
+}
+
+.section-wedding-info-button button {
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.section-covid-protocol {
+    margin-top: 70px;
+    font-family: Roboto;
+    color: black;
+}
+.section-covid-protocol-detail {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+}
+
+.section-covid-protocol-detail .protocol-icon {
+    margin-top: 30px;
+}
+
+.section-covid-protocol-detail p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.section-covid-protocol-title {
+    margin-top: 40px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-covid-protocol-title h3 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+.section-covid-protocol-title h6 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.section-couple-gallery {
+    margin-top: 55px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-couple-gallery .gallery-icon {
+    width: 120px;
+    height: 75px;
+}
+
+.section-couple-gallery h3 {
+    margin-top: 20px;
+    margin-left: -10px;
+    font-size: 40px;
+}
+
+.section-couple-gallery h6 {
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.section-couple-gallery .gallery-photo-one {
+    margin-top: 65px;
+    height: 348.13px;
+    width: 540px;
+}
+
+.section-couple-gallery .section-gallery-photo-two-right {
+    height: 748.33px;
+}
+
+.section-couple-gallery .gallery-photo-two-right-two {
+    margin-top: -5px;
+}
+
+.section-couple-gallery .section-gallery-photo-three-left {
+    min-height: 675.38px;
+}
+
+.section-couple-gallery .section-gallery-photo-three-right {
+    margin-top: -3px;
+}
+
+.section-gallery-button-gift {
+    margin-top: 55px;
+}
+
+.section-gallery-button-gift a {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+}
+
+.section-bottom-image {
+    margin-top: 55px;
+    background: url("../images/bottom-image.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 700px;
+    color: black;
+}
+
+.section-wedding-message-title {
+    margin-top: 70px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-wedding-message-title h3 {
+   font-size: 40px;
+}
+
+.section-wedding-message-title h6 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.section-wedding-message-detail {
+    background-color: #C4C4C4;
+    border-radius: 25px;
+    margin-top: 76px;
+}
+
+.section-wedding-message-detail .bird-message-icon {
+    margin-top: 20px;
+}
+
+.section-wedding-message-detail .input-name {
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.section-wedding-message-detail .input-message {
+    margin-top: 15px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.section-footer {
+    margin-top: 79px;
+    font-family: Roboto;
+    color: black;
+}
+
+.section-footer-title h3 {
+    font-size: 56px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.section-footer-title p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: -15px;
 }

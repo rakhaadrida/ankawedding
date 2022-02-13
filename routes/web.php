@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/invitation', function () { return view('invitation'); });
-Route::get('/gift', function () { return view('gift'); });
+Route::get('/main', function () { return view('main'); });
+Route::get('/gift', function () { return view('gift'); })->name('gift');
