@@ -15,11 +15,13 @@
     <main>
         <section class="section-header" id="header">
             <div class="container">
-                <div class="section-header-title col-12">
-                    <h6>
-                        WE ARE GETTING MARRIED
-                    </h6>
-                    <div class="col-3 text-center">
+                <div class="section-header-title">
+                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                        <h6>
+                            WE ARE GETTING MARRIED
+                        </h6>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 text-center">
                         <h4>Anisa & Rakha</h4>
                     </div>
                 </div>
@@ -36,9 +38,10 @@
                 </div>
                 <div class="row">
                     <div class="col text-center section-invitation-button">
-                        <button type="button" class="btn btn-outline-dark btn-invitation">
+                        <a href="{{ route('main') }}" class="btn btn-outline-dark btn-invitation">
+                            <img src="{{ asset('assets/icons/vows.png') }}" class="icon-invitation">
                             Buka Undangan
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

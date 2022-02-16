@@ -5,7 +5,7 @@ body {
 }
 
 .section-header {
-    background: url("../images/invitation-header.jpg") no-repeat center;
+    background: url("../images/invitation-header.jpg") no-repeat center center;
     background-size: cover;
     min-height: 510px;
     color: black;
@@ -55,6 +55,15 @@ header p {
 
 .section-invitation .section-invitation-button .btn-invitation {
     border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.section-invitation .icon-invitation {
+    width: 55px;
+    height: 55px;
+    margin: -10px -10px -10px -15px;
 }
 
 .section-gift-title {
@@ -87,6 +96,10 @@ header p {
 
 .section-gift-card .section-gift-card-button .btn-copy-card-number {
     border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Roboto;
+    color: black;
 }
 
 .section-gift-ewallet {
@@ -120,6 +133,10 @@ header p {
 
 .section-gift-ewallet .section-gift-ewallet-button .btn-copy-phone-number {
     border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Roboto;
+    color: black;
 }
 
 .section-gift-thanks {
@@ -256,6 +273,13 @@ header p {
     border-radius: 10px;
     font-weight: bold;
     color: black;
+    font-size: 18px;
+}
+
+.section-countdown .icon-save-date {
+    width: 50px;
+    height: 50px;
+    margin: -10px -5px -10px -15px;
 }
 
 .section-middle-image {
@@ -309,11 +333,17 @@ header p {
     margin-top: 35px;
 }
 
-.section-wedding-info-button button {
+.section-wedding-info-button a {
     border-radius: 10px;
     font-weight: bold;
     color: black;
     font-size: 18px;
+}
+
+.section-wedding-info-button .icon-streaming {
+    width: 45px;
+    height: 45px;
+    margin: -10px -5px -7px -10px;
 }
 
 .section-covid-protocol {
@@ -411,6 +441,12 @@ header p {
     border-radius: 10px;
 }
 
+.section-gallery-button-gift .icon-gift {
+    width: 50px;
+    height: 50px;
+    margin: -10px -5px -7px -10px;
+}
+
 .section-bottom-image {
     margin-top: 55px;
     background: url("../images/bottom-image.jpg") no-repeat center;
@@ -457,6 +493,35 @@ header p {
     font-size: 20px;
 }
 
+.section-wedding-message-detail .btn-submit-message {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+
+.section-wedding-message-detail .icon-submit {
+    width: 45px;
+    height: 45px;
+    margin: -10px -5px -7px -10px;
+}
+
+.section-wedding-message-detail .bird-message-one-icon {
+    margin-top: -50px;
+    width: 200px;
+    height: 180px;
+}
+
+.input-all-message {
+    margin-top: -5px !important;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
 .section-footer {
     margin-top: 79px;
     font-family: Roboto;
@@ -474,4 +539,146 @@ header p {
     font-size: 16px;
     font-weight: normal;
     margin-top: -15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 200px;
+        margin-right: 60px;
+        margin-top: 15px;
+    }
+
+    .section-gift-title .section-gift-title-header h3 {
+        margin-left: 20px;
+    }
+
+    .section-gift-title .section-gift-title-header h6 {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 200px;
+        margin-left: 240px;
+    }
+
+    .section-gift-title .section-gift-title-header h3 {
+        margin-top: -30px;
+        font-size: 48px;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .section-gift-title .section-gift-title-header h6 {
+        margin-top: -5px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-gift-card .section-gift-card-image img {
+        max-width: 450px;
+        max-height: 221px;
+    }
+
+    .section-gift-title .section-gift-title-header img {
+        width: 160px;
+        margin-left: 170px;
+    }
+
+    .section-gift-title .section-gift-title-header h3 {
+        margin-top: -30px;
+        font-size: 36px;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .section-gift-title .section-gift-title-header h6 {
+        margin-top: -5px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 120px;
+        margin-left: 200px;
+        display: flex;
+    }
+
+    .section-gift-title .section-gift-title-header h3 {
+        margin-top: -20px;
+        font-size: 28px;
+        font-family: Roboto;
+        text-align: center;
+    }
+
+    .section-gift-title .section-gift-title-header h6 {
+        margin-top: -5px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .section-gift-card .section-gift-card-image img {
+        max-width: 370px;
+        max-height: 191px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 120px;
+        margin-left: 185px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 120px;
+        margin-left: 170px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 120px;
+        margin-left: 155px;
+    }
+}
+
+@media only screen and (max-width: 438px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 110px;
+        margin-left: 140px;
+    }
+
+    .section-gift-card .section-gift-card-image img {
+        max-width: 300px;
+        max-height: 151px;
+    }
+}
+
+@media only screen and (max-width: 383px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 110px;
+        margin-left: 120px;
+    }
+
+    .section-gift-card .section-gift-card-image img {
+        max-width: 290px;
+        max-height: 141px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .section-gift-title .section-gift-title-header img {
+        width: 110px;
+        margin-left: 105px;
+    }
 }

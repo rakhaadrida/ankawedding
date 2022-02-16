@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Anka Wedding </title>
     <link rel="stylesheet" href="{{ asset('assets/libraries/bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/libraries/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800&family=Pacifico&display=swap">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
@@ -13,6 +14,10 @@
 
 <body>
     <main>
+{{--        <audio controls autoplay>--}}
+{{--            <source src="https://open.spotify.com/embed/track/0xiHNGGiSfrFfOJZGpxpJY?utm_source=generator" />--}}
+{{--        </audio>--}}
+{{--        <embed src="https://www.youtube.com/watch?v=BjN21UNKIWQ" loop="true" autostart="true" width="2" height="0">--}}
         <section class="section-header" id="header">
             <div class="container">
                 <div class="section-header-title col-12">
@@ -53,9 +58,10 @@
                             <h3>Anisa</h3>
                             <h6>Anisa Bekti Lestari S.Kom</h6>
                             <p>Putri Pertama dari Keluarga<br>Alm Bapak Supardi<br>& Ibu Winarni</p>
-                            <button type="button" class="btn btn-outline-dark btn-instagram-couple">
+                            <a href="https://www.instagram.com/anisabekti/" target="_blank" class="btn btn-outline-dark btn-instagram-couple">
+                                <i class="fa fa-instagram fa-lg mb-1"></i>
                                 Instagram
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="col-10 col-lg-2 text-center section-couple-info-detail-icon">
@@ -67,9 +73,10 @@
                             <h3>Rakha'</h3>
                             <h6>Rakha' Adrida Bagaspati S.Kom</h6>
                             <p>Putra Kedua dari Keluarga<br>Bapak Bambang Adriyanto<br>& Ibu Ermida</p>
-                            <button type="button" class="btn btn-outline-dark btn-instagram-couple">
+                            <a href="https://www.instagram.com/rakhaadrida/" target="_blank" class="btn btn-outline-dark btn-instagram-couple">
+                                <i class="fa fa-instagram fa-lg mb-1"></i>
                                 Instagram
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -102,24 +109,25 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-8 col-lg-2 text-center section-countdown-days">
-                        <h3>00</h3>
+                        <h3 id="daysCountdown">00</h3>
                         <p>Hari</p>
                     </div>
                     <div class="col-8 col-lg-2 text-center section-countdown-hours">
-                        <h3>00</h3>
+                        <h3 id="hoursCountdown">00</h3>
                         <p>Jam</p>
                     </div>
                     <div class="col-8 col-lg-2 text-center section-countdown-minutes">
-                        <h3>00</h3>
+                        <h3 id="minutesCountdown">00</h3>
                         <p>Menit</p>
                     </div>
                     <div class="col-8 col-lg-2 text-center section-countdown-seconds">
-                        <h3>00</h3>
+                        <h3 id="secondsCountdown">00</h3>
                         <p>Detik</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <button type="button" class="btn btn-outline-dark btn-save-the-date">
+                        <img src="{{ asset('assets/icons/love.png') }}" class="icon-save-date">
                         Save The Date
                     </button>
                 </div>
@@ -157,16 +165,17 @@
                 </div>
                 <div class="row justify-content-center section-wedding-info-button">
                     <div class="col-10 col-lg-4 text-center section-wedding-info-detail-button-both">
-                        <button type="button" class="btn btn-outline-dark btn-check-location">
+                        <a href="https://www.google.com/maps/place/Al-Azhar+Great+Mosque/@-6.2350882,106.7969073,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f141e9a9d2f3:0x2974690675d2098a!8m2!3d-6.23509!4d106.7990877" target="_blank" class="btn btn-outline-dark btn-check-location">
                             Lihat Lokasi
-                        </button>
+                        </a>
                     </div>
                     <div class="col-10 col-lg-2 text-center">
                     </div>
                     <div class="col-10 col-lg-4 text-center section-wedding-info-detail-both">
-                        <button type="button" class="btn btn-outline-dark btn-live-streaming">
+                        <a href="https://www.instagram.com/anisabekti/" target="_blank" class="btn btn-outline-dark btn-live-streaming">
+                            <img src="{{ asset('assets/icons/ring.png') }}" class="icon-streaming">
                             Live Streaming
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -247,6 +256,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12 text-center section-gallery-button-gift">
                         <a href="{{ route('gift') }}" class="btn btn-outline-dark btn-send-gift">
+                            <img src="{{ asset('assets/icons/gift.png') }}" class="icon-gift">
                             Kirim Hadiah
                         </a>
                     </div>
@@ -279,11 +289,34 @@
                             <textarea rows="4" name="message" class="form-control input-message" placeholder="Doa & Ucapan"></textarea>
                         </div>
                     </div>
-                    <div class="row justify-content-end">
-                        <div class="col-12 col-lg-2 text-right">
-                            <button type="button" class="btn btn-outline-dark btn-submit-message">
-                                Kirim
-                            </button>
+                    <div class="col-12 text-right">
+                        <button type="button" class="btn btn-light btn-outline-dark btn-submit-message">
+                            <img src="{{ asset('assets/icons/bird.png') }}" class="icon-submit">
+                            Kirim
+                        </button>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <img src="{{ asset('assets/icons/bird.png') }}" class="bird-message-one-icon" />
+                    </div>
+                    <div class="col-12 col-lg-10 text-center">
+                        <div class="form-group row">
+                            <textarea rows="3" name="allMessage" class="form-control input-all-message" placeholder="Okeeee"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <img src="{{ asset('assets/icons/bird.png') }}" class="bird-message-one-icon" />
+                    </div>
+                    <div class="col-12 col-lg-10 text-center">
+                        <div class="form-group row">
+                            <textarea rows="3" name="allMessage" class="form-control input-all-message" placeholder="Bangettttt"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <img src="{{ asset('assets/icons/bird.png') }}" class="bird-message-one-icon" />
+                    </div>
+                    <div class="col-12 col-lg-10 text-center">
+                        <div class="form-group row">
+                            <textarea rows="3" name="allMessage" class="form-control input-all-message" placeholder="Nihhhh"></textarea>
                         </div>
                     </div>
                 </div>
@@ -302,144 +335,45 @@
                 </div>
             </div>
         </section>
-{{--        <section class="section-remember-content" id="remember-content">--}}
-{{--            <div class="container">--}}
-{{--                <div class="section-remember-moment row justify-content-center">--}}
-{{--                    <div class="col-10 col-lg-5">--}}
-{{--                        <div class="card-moment text-center d-flex flex-column"--}}
-{{--                             style="background-image: url('images/moment/moment_1.jpg')">--}}
-{{--                            <div class="moment-title">When We First Met</div>--}}
-{{--                            <div class="moment-button mt-auto">--}}
-{{--                                <a href="first.html" class="btn btn-moment-details px-4">--}}
-{{--                                    Remember--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-10 col-lg-5">--}}
-{{--                        <div class="card-moment text-center d-flex flex-column"--}}
-{{--                             style="background-image: url('images/moment/moment_2.jpg')">--}}
-{{--                            <div class="moment-title">Up and Down</div>--}}
-{{--                            <div class="moment-button mt-auto">--}}
-{{--                                <a href="updown.html" class="btn btn-moment-details px-4">--}}
-{{--                                    Remember--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <br>--}}
-{{--                    <div class="col-10 col-lg-5">--}}
-{{--                        <div class="card-moment text-center d-flex flex-column"--}}
-{{--                             style="background-image: url('images/moment/moment_3.jpg')">--}}
-{{--                            <div class="moment-title">One More Smile</div>--}}
-{{--                            <div class="moment-button mt-auto">--}}
-{{--                                <a href="smile.html" class="btn btn-moment-details px-4">--}}
-{{--                                    Remember--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-10 col-lg-5">--}}
-{{--                        <div class="card-moment text-center d-flex flex-column"--}}
-{{--                             style="background-image: url('images/moment/moment_4.jpg')">--}}
-{{--                            <div class="moment-title">Trivia & Reward</div>--}}
-{{--                            <div class="moment-button mt-auto">--}}
-{{--                                <a href="trivia/satu.html" class="btn btn-moment-details px-4">--}}
-{{--                                    Remember--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
-{{--        <section class="section-chapter" id="chapter">--}}
-{{--            <div class="container">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="div col text-center section-chapter-heading">--}}
-{{--                        <h2>Ready for New Chapter?</h2>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
-{{--        <section class="section-chapter-content" id="chapter-content">--}}
-{{--            <div class="container">--}}
-{{--                <div class="section-chapter-stats row justify-content-center">--}}
-{{--                    <div class="col-10 col-sm-5 col-md-4 col-lg-2 stats-detail text-center">--}}
-{{--                        <h2>36</h2>--}}
-{{--                        <p>Months</p>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-10 col-sm-5 col-md-4 col-lg-2 stats-detail text-center">--}}
-{{--                        <h2>1096</h2>--}}
-{{--                        <p>Days</p>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-10 col-sm-5 col-md-4 col-lg-2 stats-detail text-center">--}}
-{{--                        <h2 style="transform: rotate(90deg);">8</h2>--}}
-{{--                        <p>Smiles</p>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-10 col-sm-5 col-md-4 col-lg-2 stats-detail text-center">--}}
-{{--                        <h2>974</h2>--}}
-{{--                        <p>Moments</p>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-10 col-sm-5 col-md-4 col-lg-2 stats-detail text-center">--}}
-{{--                        <h2>More</h2>--}}
-{{--                        <p>to Come</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
-{{--        <section class="section-ready">--}}
-{{--            <div class="container">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-12 text-center">--}}
-{{--                        <button type="button" class="btn btn-ready" data-toggle="modal" data-target="#vidChapter">--}}
-{{--                            I'm Ready--}}
-{{--                        </button>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="modal fade" id="vidChapter" tabindex="-1" role="dialog" aria-labelledby="vidChapterLabel"--}}
-{{--                 aria-hidden="true">--}}
-{{--                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">--}}
-{{--                    <div class="modal-content">--}}
-{{--                        <div class="modal-body mt-0 p-0">--}}
-{{--                            <div class="embed-responsive embed-responsive-16by9">--}}
-{{--                                <!----}}
-{{--                                <iframe class="embed-responsive-item" src="images/videos/new_chapter.mp4" allowfullscreen>--}}
-{{--                                </iframe>--}}
-{{--                                -->--}}
-{{--                                <video class="video-fluid" controls >--}}
-{{--                                    <source--}}
-{{--                                        src="images/videos/new_chapter.mp4"--}}
-{{--                                        type="video/mp4"--}}
-{{--                                    />--}}
-{{--                                </video>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="modal-footer chapter-close justify-content-center">--}}
-{{--                            <span class="title-footer mr-2">Finish Watching?</span>--}}
-{{--                            <button type="button" class="btn btn-finish btn-rounded btn-md ml-3" data-dismiss="modal">Close</button>--}}
-{{--                        </div>--}}
-
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
-{{--        <section class="section-footer">--}}
-{{--            <div class="container">--}}
-{{--                <div class="section-footer-title col-12 text-center">--}}
-{{--                    <h1>--}}
-{{--                        Thank You--}}
-{{--                        <br>--}}
-{{--                        Key--}}
-{{--                    </h1>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </section>--}}
     </main>
 
     <script src="{{ asset('assets/libraries/jquery/jquery-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/libraries/bootstrap/js/bootstrap.js') }}"></script>
+
+    <script type="text/javascript">
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 26, 2022 08:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("daysCountdown").innerHTML = days
+            document.getElementById("hoursCountdown").innerHTML = hours
+            document.getElementById("minutesCountdown").innerHTML = minutes
+            document.getElementById("secondsCountdown").innerHTML = seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("daysCountdown").innerHTML = "00";
+                document.getElementById("hoursCountdown").innerHTML = "00";
+                document.getElementById("minutesCountdown").innerHTML = "00";
+                document.getElementById("secondsCountdown").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
