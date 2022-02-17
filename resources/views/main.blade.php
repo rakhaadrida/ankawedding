@@ -20,11 +20,13 @@
 {{--        <embed src="https://www.youtube.com/watch?v=BjN21UNKIWQ" loop="true" autostart="true" width="2" height="0">--}}
         <section class="section-header" id="header">
             <div class="container">
-                <div class="section-header-title col-12">
-                    <h6>
-                        WE ARE GETTING MARRIED
-                    </h6>
-                    <div class="col-3 text-center">
+                <div class="section-header-title">
+                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                        <h6>
+                            WE ARE GETTING MARRIED
+                        </h6>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 text-center">
                         <h4>Anisa & Rakha</h4>
                     </div>
                 </div>
@@ -108,19 +110,19 @@
         <section class="section-countdown" id="countdown">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-8 col-lg-2 text-center section-countdown-days">
+                    <div class="col-8 col-lg-2 col-md-6 col-sm-6 text-center section-countdown-days">
                         <h3 id="daysCountdown">00</h3>
                         <p>Hari</p>
                     </div>
-                    <div class="col-8 col-lg-2 text-center section-countdown-hours">
+                    <div class="col-8 col-lg-2 col-md-6 col-sm-6 text-center section-countdown-hours">
                         <h3 id="hoursCountdown">00</h3>
                         <p>Jam</p>
                     </div>
-                    <div class="col-8 col-lg-2 text-center section-countdown-minutes">
+                    <div class="col-8 col-lg-2 col-md-6 col-sm-6 text-center section-countdown-minutes">
                         <h3 id="minutesCountdown">00</h3>
                         <p>Menit</p>
                     </div>
-                    <div class="col-8 col-lg-2 text-center section-countdown-seconds">
+                    <div class="col-8 col-lg-2 col-md-6 col-sm-6 text-center section-countdown-seconds">
                         <h3 id="secondsCountdown">00</h3>
                         <p>Detik</p>
                     </div>
@@ -183,27 +185,27 @@
         <section class="section-covid-protocol" id="covid-protocol">
             <div class="container">
                 <div class="row justify-content-center section-covid-protocol-detail">
-                    <div class="col-8 col-lg-4 text-center">
+                    <div class="col-8 col-lg-4 col-md-6 text-center">
                         <img src="{{ asset('assets/icons/prokes-1.png') }}" class="protocol-icon" />
                         <p>Membawa dan Menggunakan Masker</p>
                     </div>
-                    <div class="col-8 col-lg-4 text-center">
+                    <div class="col-8 col-lg-4 col-md-6 text-center">
                         <img src="{{ asset('assets/icons/prokes-2.png') }}" class="protocol-icon" />
                         <p>Mencuci Tangan dengan Sabun / Hand Sanitizer</p>
                     </div>
-                    <div class="col-8 col-lg-4 text-center">
+                    <div class="col-8 col-lg-4 col-md-6 text-center">
                         <img src="{{ asset('assets/icons/prokes-3.png') }}" class="protocol-icon" />
                         <p>Cek Suhu Tubuh</p>
                     </div>
-                    <div class="col-8 col-lg-4 text-center">
+                    <div class="col-8 col-lg-4 col-md-6 text-center">
                         <img src="{{ asset('assets/icons/prokes-4.png') }}" class="protocol-icon" />
                         <p>Menjaga Jarak Aman</p>
                     </div>
-                    <div class="col-10 col-lg-4 text-center">
+                    <div class="col-10 col-lg-4 col-md-6 text-center">
                         <img src="{{ asset('assets/icons/prokes-5.png') }}" class="protocol-icon" />
                         <p>Tidak Melakukan Kontak Fisik</p>
                     </div>
-                    <div class="col-10 col-lg-4 text-center">
+                    <div class="col-10 col-lg-4 col-md-6 text-center">
                         <img src="{{ asset('assets/icons/prokes-6.png') }}" class="protocol-icon" />
                         <p>Dianjurkan Untuk Tidak Membawa Anak Kecil</p>
                     </div>
@@ -231,7 +233,7 @@
                     <div class="col-12 col-lg-6 col-sm-12 text-center">
                         <img src="{{ asset('assets/images/gallery-1.jpg') }}" class="img-fluid gallery-photo-one"/>
                     </div>
-                    <div class="col-12 col-lg-6 col-sm-12 text-center section-wedding-prayer-prayings">
+                    <div class="col-12 col-lg-6 col-sm-12 text-center">
                         <img src="{{ asset('assets/images/gallery-2.jpg') }}" class="img-fluid gallery-photo-one" />
                     </div>
                 </div>
@@ -325,8 +327,8 @@
         <section class="section-footer" id="footer">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6 text-center section-footer-title">
-                        <div class="row">
+                    <div class="col-12 col-lg-8 col-md-12 text-center section-footer-title">
+                        <div class="row justify-content-center">
                             <img src="{{ asset('assets/icons/bride.png') }}" class="footer-icon" />
                             <h3>Anisa <strong>&</strong> Rakha</h3>
                         </div>
