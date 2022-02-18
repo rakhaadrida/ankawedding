@@ -38,7 +38,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-center section-gift-card-button">
-                        <button type="button" onclick="copyAccountNumber()" class="btn btn-outline-dark btn-copy-card-number">
+                        <button type="button" onclick="copyAccountNumber()" class="btn btn-light btn-outline-dark btn-copy-card-number">
                             <i class="fa fa-files-o fa-lg mb-1 mr-1"></i>
                             <input type="hidden" id="accountNumber" value="16400019165">
                             Salin No. Rekening
@@ -62,7 +62,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-center section-gift-ewallet-button">
-                        <button type="button" onclick="copyPhoneNumber()" class="btn btn-outline-dark btn-copy-phone-number">
+                        <button type="button" onclick="copyPhoneNumber()" class="btn btn-light btn-outline-dark btn-copy-phone-number">
                             <i class="fa fa-files-o fa-lg mb-1 mr-1"></i>
                             <input type="hidden" id="phoneNumber" value="089623034000">
                             Salin No. Ponsel
