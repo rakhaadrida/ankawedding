@@ -89,7 +89,7 @@ header p {
     border-radius: 10px;
     font-weight: bold;
     font-size: 18px;
-    color: black;
+    color: #716657;
 }
 
 .section-invitation .icon-invitation {
@@ -128,7 +128,7 @@ header p {
     font-size: 18px;
     font-weight: bold;
     font-family: Roboto;
-    color: black;
+    color: #716657;
 }
 
 .section-gift-ewallet .section-gift-ewallet-image {
@@ -161,7 +161,7 @@ header p {
     font-size: 18px;
     font-weight: bold;
     font-family: Roboto;
-    color: black;
+    color: #716657;
 }
 
 .section-gift-thanks {
@@ -244,7 +244,7 @@ header p {
 .couple-both-detail .btn-instagram-couple {
     border-radius: 10px;
     font-weight: bold;
-    color: black;
+    color: #716657;
 }
 
 .section-couple-info-detail-icon {
@@ -302,7 +302,7 @@ header p {
     margin-top: 35px;
     border-radius: 10px;
     font-weight: bold;
-    color: black;
+    color: #716657;
     font-size: 18px;
 }
 
@@ -366,7 +366,7 @@ header p {
 .section-wedding-info-button a {
     border-radius: 10px;
     font-weight: bold;
-    color: black;
+    color: #716657;
     font-size: 18px;
 }
 
@@ -455,10 +455,6 @@ header p {
     margin-top: 65px;
 }
 
-.section-couple-gallery .section-gallery-photo-three-right {
-    margin-top: -3px;
-}
-
 .section-gallery-button-gift {
     margin-top: 55px;
 }
@@ -467,7 +463,7 @@ header p {
     font-family: Roboto;
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: #716657;
     border-radius: 10px;
 }
 
@@ -516,22 +512,24 @@ header p {
     margin-top: 50px;
     margin-right: 50px;
     font-size: 20px;
+    color: black;!important;
 }
 
 .section-wedding-message-detail .input-message {
     margin-top: 15px;
     margin-right: 50px;
     font-size: 20px;
+    color: black;!important;
 }
 
 .section-wedding-message-detail .btn-submit-message {
     font-family: Roboto;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: #716657;
     border-radius: 10px;
     margin-top: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     margin-right: 40px;
 }
 
@@ -542,15 +540,29 @@ header p {
 }
 
 .section-wedding-message-detail .bird-message-one-icon {
-    margin-top: -50px;
+    margin-top: -40px;
     width: 200px;
     height: 180px;
 }
 
+.all-message {
+    margin-top: -20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    overflow-y: scroll;
+    height: 420px;
+}
+
+.section-wedding-message-detail .messageName {
+    font-weight: normal;
+    font-size: 12px;
+}
+
 .input-all-message {
-    margin-top: -5px !important;
+    margin-top: 0px !important;
     margin-right: 50px;
     font-size: 20px;
+    color: black;!important;
 }
 
 .section-footer {
@@ -603,7 +615,6 @@ header p {
     .section-gift-title .section-gift-title-header h3 {
         margin-top: -30px;
         font-size: 48px;
-        font-family: Roboto;
         text-align: center;
     }
 
@@ -662,7 +673,7 @@ header p {
     }
 
     .section-wedding-message-detail .bird-message-one-icon {
-        margin-top: -40px;
+        margin-top: -25px;
         width: 150px;
         height: 130px;
     }
@@ -670,7 +681,7 @@ header p {
     .input-all-message {
         margin-right: 50px;
         margin-left: 50px;
-        margin-top: -15px !important;
+        margin-top: 0px !important;
         margin-bottom: 10px;
     }
 
@@ -778,6 +789,10 @@ header p {
         width: 15px !important;
         margin-right: 5px;
     }
+
+    .all-message {
+        height: 380px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -794,7 +809,6 @@ header p {
     .section-gift-title .section-gift-title-header h3 {
         margin-top: -30px;
         font-size: 36px;
-        font-family: Roboto;
         text-align: center;
     }
 
@@ -910,7 +924,7 @@ header p {
     }
 
     .section-wedding-message-detail .bird-message-one-icon {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -25px;
         width: 130px;
         height: 110px;
@@ -919,7 +933,7 @@ header p {
     .input-all-message {
         margin-right: 25px;
         margin-left: 20px;
-        margin-top: -15px !important;
+        margin-top: -0px !important;
         margin-bottom: 10px;
         font-size: 14px;
     }
@@ -965,6 +979,10 @@ header p {
         width: 15px !important;
         margin-right: 5px;
     }
+
+    .all-message {
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -977,7 +995,6 @@ header p {
     .section-gift-title .section-gift-title-header h3 {
         margin-top: -20px;
         font-size: 28px;
-        font-family: Roboto;
         text-align: center;
     }
 
@@ -1219,7 +1236,7 @@ header p {
     }
 
     .section-wedding-message-detail .btn-submit-message {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         font-size: 14px !important;
     }
 
@@ -1229,7 +1246,7 @@ header p {
     }
 
     .section-wedding-message-detail .bird-message-one-icon {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -25px;
         width: 130px;
         height: 110px;
@@ -1238,7 +1255,7 @@ header p {
     .input-all-message {
         margin-right: 25px;
         margin-left: 20px;
-        margin-top: -15px !important;
+        margin-top: 0px !important;
         margin-bottom: 10px;
         font-size: 14px;
     }
@@ -1304,12 +1321,66 @@ header p {
         height: 40px;
         margin: -10px -5px -7px -10px;
     }
+
+    .all-message {
+        height: 300px;
+    }
+
+    .section-invitation .section-invitation-button .btn-invitation {
+        font-size: 12px;
+    }
+
+    .section-invitation .icon-invitation {
+        width: 35px;
+        height: 35px;
+        margin: -5px -5px -5px -15px;
+    }
+
+    .section-invitation .section-invitation-title h6 {
+        font-size: 18px;;
+    }
+
+    .section-invitation .section-invitation-title h3 {
+        font-size: 32px;
+    }
+
+    .section-invitation .section-invitation-title p {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 535px) {
     .section-gift-title .section-gift-title-header img {
         width: 120px;
         margin-left: 185px;
+    }
+
+    .section-header .section-header-title h6 {
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    .section-header .section-header-title h4 {
+        font-size: 30px;
+        line-height: 8px;
+    }
+
+    .section-header .section-header-title .and-symbol {
+        font-size: 30px;
+        line-height: 8px;
+    }
+
+    .section-header .section-header-title h5 {
+        font-size: 20px;
+        line-height: 8px;
+    }
+
+    .section-gift-thanks .section-gift-thanks-message h5 {
+        font-size: 14px;
+    }
+
+    .section-gift-thanks .section-gift-thanks-message h3 {
+        font-size: 18px;
     }
 }
 
@@ -1340,11 +1411,11 @@ header p {
     }
 
     .section-wedding-message-detail .btn-submit-message {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .section-wedding-message-detail .bird-message-one-icon {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -15px;
         width: 110px;
         height: 90px;
@@ -1353,9 +1424,13 @@ header p {
     .input-all-message {
         margin-right: 25px;
         margin-left: 15px;
-        margin-top: -15px !important;
+        margin-top: 0px !important;
         margin-bottom: 10px;
         font-size: 13px;
+    }
+
+    .all-message {
+        height: 280px;
     }
 }
 
@@ -1419,11 +1494,11 @@ header p {
     }
 
     .section-wedding-message-detail .btn-submit-message {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     .section-wedding-message-detail .bird-message-one-icon {
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -15px;
         width: 110px;
         height: 90px;
@@ -1432,7 +1507,7 @@ header p {
     .input-all-message {
         margin-right: 25px;
         margin-left: 15px;
-        margin-top: -15px !important;
+        margin-top: 0px !important;
         margin-bottom: 10px;
         font-size: 12px;
     }
@@ -1472,9 +1547,95 @@ header p {
         height: 20px;
         margin: -10px -5px -7px -10px;
     }
+
+    .section-couple-info-detail {
+        margin-top: 50px;
+    }
+
+    .section-couple-info-detail img {
+        height: 130px;
+    }
+
+    .section-couple-info-detail .icon-married {
+        height: 80px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+
+    .couple-both-detail {
+        margin-top: 22px;
+        color: white;
+    }
+
+    .couple-both-detail h3 {
+        font-size: 22px;
+    }
+
+    .couple-both-detail h6 {
+        font-size: 16px;
+        margin-bottom: 13px;
+        margin-top: 13px;
+    }
+
+    .couple-both-detail p {
+        font-size: 12px;
+    }
+
+    .couple-both-detail .btn-instagram-couple {
+        font-size: 12px;
+    }
+
+    .couple-both-detail .btn-instagram-couple i {
+        width: 5px !important;
+        margin-right: 10px;
+    }
+
+    .section-wedding-info-detail-icon img {
+        width: 80px;
+    }
+
+    .section-wedding-message-detail .bird-message-icon {
+        margin-top: 40px;
+        margin-left: -10px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .section-wedding-message-detail .input-name {
+        margin-top: 40px;
+        margin-right: 25px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .section-wedding-message-detail .input-message {
+        margin-right: 25px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .section-wedding-message-detail .btn-submit-message {
+        margin-bottom: 50px;
+        font-size: 12px;
+    }
+
+    .section-wedding-message-detail .bird-message-one-icon {
+        margin-top: -10px;
+        margin-left: -20px;
+        width: 100px;
+        height: 80px;
+    }
+
+    .input-all-message {
+        margin-right: 25px;
+        margin-left: 15px;
+        margin-top: 0px !important;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
 }
 
-@media only screen and (max-width: 383px) {
+@media only screen and (max-width: 388px) {
     .section-gift-title .section-gift-title-header img {
         width: 110px;
         margin-left: 120px;
@@ -1483,6 +1644,18 @@ header p {
     .section-gift-card .section-gift-card-image img {
         max-width: 290px;
         max-height: 141px;
+    }
+
+    .section-wedding-info-button .icon-location {
+        display: none;
+    }
+
+    .section-wedding-info-button .icon-streaming {
+        display: none;
+    }
+
+    .section-wedding-info-button a {
+        font-size: 9px;
     }
 }
 

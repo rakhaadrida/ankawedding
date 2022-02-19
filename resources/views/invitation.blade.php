@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Anka Wedding </title>
     <link rel="stylesheet" href="{{ asset('assets/libraries/bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/libraries/aos/css/aos.css') }}">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800&family=Pacifico&display=swap">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
@@ -16,15 +17,15 @@
         <section class="section-header" id="header">
             <div class="container">
                 <div class="section-header-title">
-                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                    <div class="col-12 col-lg-4 col-md-6 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h6>
                             WE ARE GETTING MARRIED
                         </h6>
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                    <div class="col-12 col-lg-4 col-md-6 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h4>Anisa <span class="and-symbol">&</span> Rakha</h4>
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                    <div class="col-12 col-lg-4 col-md-6 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h5>
                             26 Februari 2022
                         </h5>
@@ -35,7 +36,7 @@
         <section class="section-invitation" id="invitation">
             <div class="container">
                 <div class="row">
-                    <div class="col text-center section-invitation-title">
+                    <div class="col text-center section-invitation-title" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h6>Kepada Yth.</h6>
                         <h3 id="invitationName">Andini Az-Zahra Safitri</h3>
                         <p>Di Tempat</p>
@@ -55,7 +56,9 @@
 
     <script src="{{ asset('assets/libraries/jquery/jquery-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/libraries/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('assets/libraries/aos/js/aos.js') }}"></script>
     <script type="text/javascript">
+        AOS.init();
         var invitationParam = new URLSearchParams(location.search);
 
         var name = invitationParam.get('for');

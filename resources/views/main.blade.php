@@ -7,29 +7,37 @@
     <title> Anka Wedding </title>
     <link rel="stylesheet" href="{{ asset('assets/libraries/bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/libraries/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/libraries/aos/css/aos.css') }}">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800&family=Pacifico&display=swap">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 </head>
 
-<body>
+<body onclick="playAudio()">
     <main>
-{{--        <audio controls autoplay>--}}
-{{--            <source src="https://open.spotify.com/embed/track/0xiHNGGiSfrFfOJZGpxpJY?utm_source=generator" />--}}
+        <audio autoplay id="audio">
+            <source src="{{ asset('assets/songs/Rendy_Pandugo-By_My_Side.mp3') }}" type="audio/mp3">
+        </audio>
+{{--        <audio id="byMySide" autoplay controls>--}}
+{{--            <source src="{{ asset('assets/songs/Rendy_Pandugo-By_My_Side.mp3') }}" type="audio/mp3">--}}
 {{--        </audio>--}}
-{{--        <embed src="https://www.youtube.com/watch?v=BjN21UNKIWQ" loop="true" autostart="true" width="2" height="0">--}}
+{{--        <iframe src="{{ asset('assets/songs/Rendy_Pandugo-By_My_Side.mp3') }}" allow="autoplay" style="display:none" id="audio">--}}
+{{--        </iframe>--}}
+{{--        <audio controls autoplay hidden>--}}
+{{--            <embed name="byMySide" src="{{ asset('assets/songs/Rendy_Pandugo-By_My_Side.mp3') }}" loop="false" hidden="true" autostart="true">--}}
+{{--        </audio>--}}
         <section class="section-header" id="header">
             <div class="container">
-                <div class="section-header-title">
-                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                <div class="section-header-title" >
+                    <div class="col-12 col-lg-4 col-md-6 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h6>
                             WE ARE GETTING MARRIED
                         </h6>
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                    <div class="col-12 col-lg-4 col-md-6 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h4>Anisa <span class="and-symbol">&</span> Rakha</h4>
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6 text-center">
+                    <div class="col-12 col-lg-4 col-md-6 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h5>
                             26 Februari 2022
                         </h5>
@@ -40,12 +48,12 @@
         <section class="section-prayer" id="prayer">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6 text-center section-prayer-greetings">
+                    <div class="col-12 col-lg-6 text-center section-prayer-greetings" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <p>Assalamualaikum warahmatullahi wabarakatuh...</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-10 text-center section-prayer-prayings">
+                    <div class="col-12 col-lg-10 text-center section-prayer-prayings" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <p>“Mahasuci (Allah) yang telah menciptakan semuanya berpasang-pasangan, baik dari apa yang ditumbuhkan oleh bumi dan dari diri mereka sendiri, maupun dari apa yang tidak mereka ketahui.”</p>
                     </div>
                 </div>
@@ -55,17 +63,19 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center section-couple-info-title">
-                        <h3 id="coupeInfoTitle">The Wedding Of</h3>
+                        <h3 id="coupeInfoTitle" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">The Wedding Of</h3>
                     </div>
                 </div>
                 <div class="row justify-content-center section-couple-info-detail">
                     <div class="col-5 col-lg-5 text-center section-couple-info-detail-both">
-                        <img src="{{ asset('assets/images/anisa.jpg') }}" class="couple-foto" />
+                        <img src="{{ asset('assets/images/anisa.jpg') }}" class="couple-foto"
+                             data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000" />
                         <div class="couple-both-detail">
-                            <h3>Anisa</h3>
-                            <h6>Anisa Bekti Lestari S.Kom</h6>
-                            <p>Putri Pertama dari Keluarga<br>Alm Bapak Supardi<br>& Ibu Winarni</p>
-                            <a href="https://www.instagram.com/anisabekti/" target="_blank" class="btn btn-light btn-outline-dark btn-instagram-couple">
+                            <h3 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Anisa</h3>
+                            <h6 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Anisa Bekti Lestari S.Kom</h6>
+                            <p data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Putri Pertama dari Keluarga<br>Alm Bapak Supardi<br>& Ibu Winarni</p>
+                            <a href="https://www.instagram.com/anisabekti/" target="_blank" class="btn btn-light btn-outline-dark btn-instagram-couple"
+                               data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                                 <i class="fa fa-instagram fa-lg mb-1"></i>
                                 Instagram
                             </a>
@@ -75,12 +85,14 @@
                         <img src="{{ asset('assets/icons/just-married.png') }}" class="icon-married" />
                     </div>
                     <div class="col-5 col-lg-5 text-center section-couple-info-detail-both">
-                        <img src="{{ asset('assets/images/rakha.jpg') }}" class="couple-foto" />
+                        <img src="{{ asset('assets/images/rakha.jpg') }}" class="couple-foto"
+                             data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000" />
                         <div class="couple-both-detail">
-                            <h3>Rakha</h3>
-                            <h6>Rakha' Adrida Bagaspati S.Kom</h6>
-                            <p>Putra Kedua dari Keluarga<br>Bapak Bambang Adriyanto<br>& Ibu Ermida</p>
-                            <a href="https://www.instagram.com/rakhaadrida/" target="_blank" class="btn btn-light btn-outline-dark btn-instagram-couple">
+                            <h3 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Rakha</h3>
+                            <h6 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Rakha' Adrida Bagaspati S.Kom</h6>
+                            <p data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Putra Kedua dari Keluarga<br>Bapak Bambang Adriyanto<br>& Ibu Ermida</p>
+                            <a href="https://www.instagram.com/rakhaadrida/" target="_blank" class="btn btn-light btn-outline-dark btn-instagram-couple"
+                               data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                                 <i class="fa fa-instagram fa-lg mb-1"></i>
                                 Instagram
                             </a>
@@ -101,11 +113,12 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-10 text-center section-wedding-prayer-title">
-                        <h3>Doa Pernikahan</h3>
+                        <h3 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Doa Pernikahan</h3>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-10 text-center section-wedding-prayer-prayings">
+                    <div class="col-10 text-center section-wedding-prayer-prayings"
+                         data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <p>“ Dan Diantara tanda-tanda  kekuasaan Allah, ialah Diciptakan-Nya  untukmu pasangan hidup<br>dari jenismu sendiri  supaya kamu merasa tentram disamping-Nya.<br>dan dijadikan-Nya rasa kasih sayang  diantara kamu.<br>Sesungguhnya yang demikian itu menjadi  bukti kekuasaan Allah bagi kaum yang berfikir. “</p>
                         <h6>( QS. Ar- Rum 21 )</h6>
                     </div>
@@ -132,12 +145,12 @@
                         <p>Detik</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <button type="button" class="btn btn-light btn-outline-dark btn-save-the-date">
-                        <img src="{{ asset('assets/icons/love.png') }}" class="icon-save-date">
-                        Save The Date
-                    </button>
-                </div>
+{{--                <div class="row justify-content-center">--}}
+{{--                    <button type="button" class="btn btn-light btn-outline-dark btn-save-the-date" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000" >--}}
+{{--                        <img src="{{ asset('assets/icons/love.png') }}" class="icon-save-date">--}}
+{{--                        Save The Date--}}
+{{--                    </button>--}}
+{{--                </div>--}}
             </div>
         </section>
         <section class="section-middle-image" id="middle-image">
@@ -147,7 +160,8 @@
         <section class="section-wedding-info" id="wedding-info">
             <div class="container">
                 <div class="row justify-content-center section-wedding-info-detail">
-                    <div class="col-4 col-lg-4 text-center section-wedding-info-detail-both">
+                    <div class="col-4 col-lg-4 text-center section-wedding-info-detail-both"
+                         data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h2>Akad</h2>
                         <div class="wedding-both-detail">
                             <h6>Sabtu, 26 Februari 2022<br>Jakarta Selatan, Indonesia<br>08.00 - 09.00 WIB</h6>
@@ -157,7 +171,8 @@
                     <div class="col-3 col-lg-2 text-center section-wedding-info-detail-icon">
                         <img src="{{ asset('assets/icons/wedding-location.png') }}" class="wedding-location-icon" />
                     </div>
-                    <div class="col-4 col-lg-4 text-center section-wedding-info-detail-both">
+                    <div class="col-4 col-lg-4 text-center section-wedding-info-detail-both" ]
+                         data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h2>Resepsi</h2>
                         <div class="wedding-both-detail">
                             <h6>Sabtu, 26 Februari 2022<br>Jakarta Selatan, Indonesia<br>11.00 - 13.00 WIB</h6>
@@ -166,14 +181,14 @@
                     </div>
                 </div>
                 <div class="row justify-content-center section-wedding-info-address">
-                    <div class="col-10 text-center">
+                    <div class="col-10 text-center" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <h4>Masjid Agung Al-Azhar (Aula Buya Hamka)<br>Jl. Sisingamangaraja No.1, RT.2/RW.1, Selong, Kec. Kby. Baru, Kota Jakarta Selatan,<br>Daerah Khusus Ibukota Jakarta 12110</h4>
                     </div>
                 </div>
                 <div class="row justify-content-center section-wedding-info-button">
                     <div class="col-4 col-lg-4 text-center section-wedding-info-detail-button-both">
                         <a href="https://www.google.com/maps/place/Al-Azhar+Great+Mosque/@-6.2350882,106.7969073,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69f141e9a9d2f3:0x2974690675d2098a!8m2!3d-6.23509!4d106.7990877" target="_blank"
-                           class="btn btn-light btn-outline-dark btn-check-location">
+                           class="btn btn-light btn-outline-dark btn-check-location" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                             <img src="{{ asset('assets/icons/location.png') }}" class="icon-location">
                             Lihat Lokasi
                         </a>
@@ -181,7 +196,8 @@
                     <div class="col-2 col-lg-2 text-center">
                     </div>
                     <div class="col-4 col-lg-4 text-center section-wedding-info-detail-button-both">
-                        <a href="https://www.instagram.com/anisabekti/" target="_blank" class="btn btn-light btn-outline-dark btn-live-streaming">
+                        <a href="https://www.instagram.com/anisabekti/" target="_blank" class="btn btn-light btn-outline-dark btn-live-streaming"
+                           data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                             <img src="{{ asset('assets/icons/ring.png') }}" class="icon-streaming">
                             Live Streaming
                         </a>
@@ -192,35 +208,35 @@
         <section class="section-covid-protocol" id="covid-protocol">
             <div class="container">
                 <div class="row justify-content-center section-covid-protocol-detail">
-                    <div class="col-4 col-lg-4 col-md-4 text-center">
+                    <div class="col-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <img src="{{ asset('assets/icons/prokes-1.png') }}" class="protocol-icon" />
                         <p>Membawa dan Menggunakan Masker</p>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 text-center">
+                    <div class="col-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <img src="{{ asset('assets/icons/prokes-2.png') }}" class="protocol-icon" />
                         <p>Mencuci Tangan dengan Sabun / Hand Sanitizer</p>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 text-center">
+                    <div class="col-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <img src="{{ asset('assets/icons/prokes-3.png') }}" class="protocol-icon" />
                         <p>Cek Suhu Tubuh</p>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 text-center">
+                    <div class="col-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <img src="{{ asset('assets/icons/prokes-4.png') }}" class="protocol-icon" />
                         <p>Menjaga Jarak Aman</p>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 text-center">
+                    <div class="col-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <img src="{{ asset('assets/icons/prokes-5.png') }}" class="protocol-icon" />
                         <p>Tidak Melakukan Kontak Fisik</p>
                     </div>
-                    <div class="col-4 col-lg-4 col-md-4 text-center">
+                    <div class="col-4 col-lg-4 col-md-4 text-center" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <img src="{{ asset('assets/icons/prokes-6.png') }}" class="protocol-icon" />
                         <p>Dianjurkan Untuk Tidak Membawa Anak Kecil</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-10 text-center section-covid-protocol-title">
-                        <h3>Protokol Kesehatan</h3>
-                        <h6>Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang terjadi ditengah pandemi covid-19 ini, kami memohon maaf karena acara akan diselenggarakan sesuai peraturan dan himbauan pemerintah.</h6>
+                        <h3 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Protokol Kesehatan</h3>
+                        <h6 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">Tanpa mengurangi rasa hormat, dikarenakan situasi yang sedang terjadi ditengah pandemi covid-19 ini, kami memohon maaf karena acara akan diselenggarakan sesuai peraturan dan himbauan pemerintah.</h6>
                     </div>
                 </div>
             </div>
@@ -230,57 +246,58 @@
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-3 text-center section-couple-gallery-title">
                         <div class="row">
-                            <img src="{{ asset('assets/icons/gallery.png') }}" class="gallery-icon" />
-                            <h3>Galeri</h3>
+                            <img src="{{ asset('assets/icons/gallery.png') }}" class="gallery-icon" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
+                            <h3 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Galeri</h3>
                         </div>
-                        <h6>Anisa <span class="and-symbol">&</span> Rakha</h6>
+                        <h6 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">Anisa <span class="and-symbol">&</span> Rakha</h6>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-6 col-lg-6 col-sm-6 text-center">
-                        <img src="{{ asset('assets/images/gallery-1.jpg') }}" class="img-fluid gallery-photo-one"/>
+                        <img src="{{ asset('assets/images/gallery-1.jpg') }}" class="img-fluid gallery-photo-one" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
                     <div class="col-6 col-lg-6 col-sm-6 text-center">
-                        <img src="{{ asset('assets/images/gallery-2.jpg') }}" class="img-fluid gallery-photo-one" />
+                        <img src="{{ asset('assets/images/gallery-2.jpg') }}" class="img-fluid gallery-photo-one"  data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6 col-lg-6 col-sm-6 text-center">
-                        <img src="{{ asset('assets/images/gallery-3.jpg') }}" class="img-fluid gallery-photo-two-left"/>
+                    <div class="col-6 col-lg-6 col-sm-6 text-center"\>
+                        <img src="{{ asset('assets/images/gallery-3.jpg') }}" class="img-fluid gallery-photo-two-left" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-two-right">
-                        <img src="{{ asset('assets/images/gallery-4.jpg') }}" class="img-fluid gallery-photo-two-right-one" />
-                        <img src="{{ asset('assets/images/gallery-5.jpg') }}" class="img-fluid gallery-photo-two-right-two" />
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-left">
-                        <img src="{{ asset('assets/images/gallery-6.jpg') }}" class="img-fluid gallery-photo-three-left-one" />
-                        <img src="{{ asset('assets/images/gallery-7.jpg') }}" class="img-fluid gallery-photo-three-left-two" />
-                    </div>
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-right">
-                        <img src="{{ asset('assets/images/gallery-8.jpg') }}" class="img-fluid gallery-photo-three-right"/>
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-two-right"\>
+                        <img src="{{ asset('assets/images/gallery-4.jpg') }}" class="img-fluid gallery-photo-two-right-one" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
+                        <img src="{{ asset('assets/images/gallery-5.jpg') }}" class="img-fluid gallery-photo-two-right-two" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-left">
-                        <img src="{{ asset('assets/images/gallery-9.jpg') }}" class="img-fluid gallery-photo-four-left" />
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-left"\>
+                        <img src="{{ asset('assets/images/gallery-6.jpg') }}" class="img-fluid gallery-photo-three-left-one" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
+                        <img src="{{ asset('assets/images/gallery-7.jpg') }}" class="img-fluid gallery-photo-three-left-two" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-right">
-                        <img src="{{ asset('assets/images/gallery-10.jpg') }}" class="img-fluid gallery-photo-four-right"/>
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-right"\>
+                        <img src="{{ asset('assets/images/gallery-8.jpg') }}" class="img-fluid gallery-photo-three-right" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-left">
-                        <img src="{{ asset('assets/images/gallery-11.jpg') }}" class="img-fluid gallery-photo-five-left" />
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-four-left">
+                        <img src="{{ asset('assets/images/gallery-9.jpg') }}" class="img-fluid gallery-photo-four-left" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
-                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-three-right">
-                        <img src="{{ asset('assets/images/gallery-12.jpg') }}" class="img-fluid gallery-photo-five-right"/>
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-four-right">
+                        <img src="{{ asset('assets/images/gallery-10.jpg') }}" class="img-fluid gallery-photo-four-right" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-five-left">
+                        <img src="{{ asset('assets/images/gallery-11.jpg') }}" class="img-fluid gallery-photo-five-left"  data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
+                    </div>
+                    <div class="col-6 col-lg-6 col-sm-6 text-center section-gallery-photo-five-right">
+                        <img src="{{ asset('assets/images/gallery-12.jpg') }}" class="img-fluid gallery-photo-five-right" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000"/>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 text-center section-gallery-button-gift">
-                        <a href="{{ route('gift') }}" class="btn btn-light btn-outline-dark btn-send-gift">
+                        <a href="{{ route('gift') }}" class="btn btn-light btn-outline-dark btn-send-gift"
+                           data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                             <img src="{{ asset('assets/icons/gift.png') }}" class="icon-gift">
                             Kirim Hadiah
                         </a>
@@ -289,15 +306,15 @@
             </div>
         </section>
         <section class="section-bottom-image" id="bottom-image">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
             </div>
         </section>
         <section class="section-wedding-message-title" id="wedding-message-title">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <h3>Ucapkan Sesuatu</h3>
-                        <h6>Silahkan Kirimkan Doa & Ucapan Kepada Kedua Mempelai</h6>
+                        <h3 data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">Ucapkan Sesuatu</h3>
+                        <h6 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1000">Silahkan Kirimkan Doa & Ucapan Kepada Kedua Mempelai</h6>
                     </div>
                 </div>
             </div>
@@ -310,17 +327,18 @@
                     </div>
                     <div class="col-10 col-lg-10 text-center">
                         <div class="form-group row">
-                            <input type="text" name="name" class="form-control input-name" placeholder="Nama Anda">
-                            <textarea rows="4" name="message" class="form-control input-message" placeholder="Doa & Ucapan"></textarea>
+                            <input type="text" name="name" id="inputName" class="form-control input-name" placeholder="Nama Anda">
+                            <textarea rows="4" name="message" id="inputMessage" class="form-control input-message" placeholder="Doa & Ucapan"></textarea>
                         </div>
                     </div>
                     <div class="col-12 text-right">
-                        <button type="button" class="btn btn-light btn-outline-dark btn-submit-message">
+                        <button type="button" id="btnSubmitMessage" class="btn btn-light btn-outline-dark btn-submit-message"
+                                data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                             <img src="{{ asset('assets/icons/bird.png') }}" class="icon-submit">
                             Kirim
                         </button>
                     </div>
-                    <div class="col-2 col-lg-2">
+{{--                    <div class="col-2 col-lg-2">
                         <img src="{{ asset('assets/icons/bird.png') }}" class="bird-message-one-icon" />
                     </div>
                     <div class="col-10 col-lg-10 text-center">
@@ -343,14 +361,17 @@
                         <div class="form-group row">
                             <textarea rows="3" name="allMessage" class="form-control input-all-message" placeholder="Nihhhh"></textarea>
                         </div>
-                    </div>
+                    </div> --}}
+                </div>
+                <div class="row justify-content-center section-wedding-message-detail all-message" id="displayMessage">
                 </div>
             </div>
         </section>
         <section class="section-footer" id="footer">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-8 col-md-12 text-center section-footer-title">
+                    <div class="col-12 col-lg-8 col-md-12 text-center section-footer-title"
+                         data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1000">
                         <div class="row justify-content-center">
                             <img src="{{ asset('assets/icons/bride.png') }}" class="footer-icon" />
                             <h3>Anisa <span class="and-symbol">&</span> Rakha</h3>
@@ -364,8 +385,40 @@
 
     <script src="{{ asset('assets/libraries/jquery/jquery-3.5.0.min.js') }}"></script>
     <script src="{{ asset('assets/libraries/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('assets/libraries/aos/js/aos.js') }}"></script>
 
     <script type="text/javascript">
+        AOS.init();
+
+        function playAudio() {
+            var audio = new Audio('{{ asset('assets/songs/Rendy_Pandugo-By_My_Side.mp3') }}');
+            audio.play();
+        }
+
+        window.onload = function(){
+            var listMessage = JSON.parse(localStorage.getItem('message')); //get data from storage
+            if (listMessage !== null) { //if data exist (todos are in storage)
+                listMessage.reverse();
+                var i = listMessage.length;
+                listMessage.forEach(function(value){ //append each element into the dom
+                    var templateDiv =
+                        "<div class='col-2 col-lg-2' id='message" + i + "'>" +
+                        "<img src='"+ value.src +"' class='bird-message-one-icon' alt='' />" +
+                        "</div>" +
+                        "<div class='col-10 col-lg-10 text-center'>" +
+                        "<div class='form-group row'>" +
+                        "<textarea rows='3' name='allMessage' class='form-control input-all-message' disabled>" + value.name + ' (' + value.dateTime + ') ' + "&#13;&#10;" + value.message +
+                        "</textarea>" +
+                        "</div>"
+
+                    i--;
+                    document.getElementById('displayMessage').innerHTML += templateDiv;
+                })
+            } else { //if nothing exist in storage, keep todos array empty
+                listMessage = [];
+            }
+        }
+
         // Set the date we're counting down to
         var countDownDate = new Date("Feb 26, 2022 08:00:00").getTime();
 
@@ -400,18 +453,66 @@
             }
         }, 1000);
 
-        const zoomElement = document.getElementById("#coupleInfoTitle");
-        let zoom = 1;
-        const ZOOM_SPEED = 0.1;
 
-        document.addEventListener("wheel", function(e) {
+        var userName = document.getElementById('inputName');
+        var userMessage = document.getElementById('inputMessage');
+        var displayMessage = document.getElementById('displayMessage');
 
-            if(e.deltaY > 0){
-                zoomElement.style.transform = `scale(${zoom += ZOOM_SPEED})`;
-            }else{
-                zoomElement.style.transform = `scale(${zoom -= ZOOM_SPEED})`;  }
+        if(!localStorage.getItem("message")){
+            localStorage.setItem("message", JSON.stringify([]));
+        }
 
+        var messageHistory = JSON.parse(localStorage.getItem("message"));
+
+        var btnSubmit = document.getElementById('btnSubmitMessage');
+        var i = messageHistory.length;
+        btnSubmit.addEventListener('click', function () {
+            if (userName.value == ""){
+                alert("Please Input Your Name....");
+                return
+            }
+
+            if (userMessage.value == ""){
+                alert("Please Input Your Message....");
+                return
+            }
+
+            var no = +i + 1;
+            var message = {
+                name : userName.value,
+                message : userMessage.value,
+                dateTime : new Date().toLocaleTimeString() + " " + new Date().toDateString(),
+                src : "{{ asset('assets/icons/bird.png') }}"
+            };
+
+            messageHistory.push(message);
+            userName.value = "";
+            userMessage.value = "";
+            localStorage.setItem("message", JSON.stringify(messageHistory));
+
+            localData = localStorage.getItem("message");
+            localData = JSON.parse(localData);
+
+            var templateDiv =
+                "<div class='col-2 col-lg-2' id='message" + no + "'>" +
+                    "<img src='"+ localData[i].src +"' class='bird-message-one-icon' alt='' />" +
+                "</div>" +
+                "<div class='col-10 col-lg-10 text-center'>" +
+                "<div class='form-group row'>" +
+                    "<textarea rows='3' name='allMessage' class='form-control input-all-message' disabled>" + localData[i].name + ' (' + localData[i].dateTime + ') ' + "&#13;&#10;" + localData[i].message +
+                    "</textarea>" +
+                "</div>"
+
+            if(i > 0) {
+                $('#message' + i).before(templateDiv);
+            } else {
+                displayMessage.innerHTML += templateDiv;
+            }
+
+            i++;
         });
+
+        document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
     </script>
 </body>
 </html>
